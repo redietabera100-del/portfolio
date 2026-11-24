@@ -74,7 +74,7 @@ function App() {
                     <p className="location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.2" /></svg>Addis Ababa, Ethiopia · Open to hybrid and on-site roles</p>
                 </div>
                 <div className="portrait-wrap">
-                    <img className="portrait" src="/images/headshot.png" alt="Portrait of Rediet Abera" width="533" height="545" fetchPriority="high" />
+                    <img className="portrait" src="./images/headshot.png" alt="Portrait of Rediet Abera" width="533" height="545" fetchPriority="high" />
                     <div className="portrait-label"><span>Focus areas</span>Public health · Community health · Research</div>
                 </div>
             </section>
