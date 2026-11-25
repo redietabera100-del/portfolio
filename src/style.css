@@ -86,7 +86,7 @@
     .credential { display: flex; justify-content: space-between; gap: 1rem; padding-block: .95rem; border-bottom: 1px solid var(--line); }
     .credential:first-child { border-top: 1px solid var(--line); }
     .credential strong { max-width: 320px; font-size: .9rem; line-height: 1.4; }
-    .credential span { flex: 0 0 auto; color: var(--muted); font-size: .78rem; text-align: end; }
+    .credential > span { display: grid; gap: .15rem; flex: 0 1 auto; color: var(--muted); font-size: .78rem; text-align: end; }
     .credential a { color: inherit; text-decoration-color: #8a9aab; text-underline-offset: 3px; }
     .credential a:hover { color: var(--teal); }
     .contact-section { padding-block: clamp(4rem, 8vw, 6.7rem); background: #edf3f4; }

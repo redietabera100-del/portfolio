@@ -111,7 +111,7 @@ function App() {
             <section className="section" id="education" aria-labelledby="education-title"><div className="shell">
                 <SectionHeading number="04 / EDUCATION" id="education-title" title="Education & credentials" intro="Formal public health training and continuing skills development." />
                 <div className="education-grid"><article className="degree-card"><Eyebrow>Formal degree</Eyebrow><h3>Bachelor’s Degree in Public Health Officer</h3><p>University of Gondar · 2024</p><div className="degree-details"><span>GPA 3.58 / 4.00</span><span>Public Health</span></div></article>
-                    <div className="credential-list" aria-label="Certifications">{credentials.map(([name, date]) => <div className="credential" key={name}><strong>{name === 'Digital Health Foundations' ? <a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">{name}</a> : name}</strong><span>{date}</span></div>)}</div>
+                    <div className="credential-list" aria-label="Certifications">{credentials.map(([name, date]) => <div className="credential" key={name}><strong>{name === 'Digital Health Foundations' ? <a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">{name}</a> : name}</strong><span>{name === 'Digital Health Foundations' ? <><span>Africa Digital Health Academy · 25 Nov 2026</span><span>5 CPD points · Valid through 25 Nov 2029</span></> : date}</span></div>)}</div>
                 </div>
             </div></section>
 
