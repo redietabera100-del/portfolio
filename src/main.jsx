@@ -27,6 +27,7 @@ const competencies = [
 ];
 
 const credentials = [
+    ['Digital Health Foundations', 'Africa Digital Health Academy · 25 Nov 2026 · 5 CPD points · valid through 25 Nov 2029'],
     ['Employability Skills & Job Readiness', 'Oct 2023'],
     ['English Language Proficiency Certification', 'University of Gondar · 2024'],
     ['Africa Girls Can Code Initiative', 'Jul–Aug 2019'],
@@ -110,8 +111,14 @@ function App() {
             <section className="section" id="education" aria-labelledby="education-title"><div className="shell">
                 <SectionHeading number="04 / EDUCATION" id="education-title" title="Education & credentials" intro="Formal public health training and continuing skills development." />
                 <div className="education-grid"><article className="degree-card"><Eyebrow>Formal degree</Eyebrow><h3>Bachelor’s Degree in Public Health Officer</h3><p>University of Gondar · 2024</p><div className="degree-details"><span>GPA 3.58 / 4.00</span><span>Public Health</span></div></article>
-                    <div className="credential-list" aria-label="Certifications">{credentials.map(([name, date]) => <div className="credential" key={name}><strong>{name}</strong><span>{date}</span></div>)}</div>
+                    <div className="credential-list" aria-label="Certifications">{credentials.map(([name, date]) => <div className="credential" key={name}><strong>{name === 'Digital Health Foundations' ? <a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">{name}</a> : name}</strong><span>{date}</span></div>)}</div>
                 </div>
+                <figure className="certificate">
+                    <a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer" aria-label="Verify Digital Health Foundations certificate">
+                        <img src="./images/cert1.png" alt="Digital Health Foundations certificate issued to Rediet Abera by Africa Digital Health Academy on 25 November 2026" width="775" height="419" loading="lazy" />
+                    </a>
+                    <figcaption><a href="https://adha.edu.et/en/credential/ADHA-C-2026-SDFN7T" target="_blank" rel="noreferrer">Verify certificate ↗</a></figcaption>
+                </figure>
             </div></section>
 
             <section className="contact-section" id="contact" aria-labelledby="contact-title"><div className="shell contact-layout">

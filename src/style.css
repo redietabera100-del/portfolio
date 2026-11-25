@@ -87,6 +87,11 @@
     .credential:first-child { border-top: 1px solid var(--line); }
     .credential strong { max-width: 320px; font-size: .9rem; line-height: 1.4; }
     .credential span { flex: 0 0 auto; color: var(--muted); font-size: .78rem; text-align: end; }
+    .credential a, .certificate figcaption a { color: inherit; text-decoration-color: #8a9aab; text-underline-offset: 3px; }
+    .credential a:hover, .certificate figcaption a:hover { color: var(--teal); }
+    .certificate { max-width: 775px; margin: 2.5rem 0 0 auto; }
+    .certificate img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+    .certificate figcaption { margin-top: .65rem; color: var(--muted); font-size: .85rem; text-align: end; }
     .contact-section { padding-block: clamp(4rem, 8vw, 6.7rem); background: #edf3f4; }
     .contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, .72fr); gap: 3rem; align-items: start; }
     .contact-layout h2 { max-width: 580px; }
